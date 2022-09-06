@@ -8,67 +8,67 @@ xkb_symbols "custom_caps" {
     // "U"
     key <AD07> {
         symbols[Group1] = [ NoSymbol, NoSymbol, Home ],
-        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<HOME>, clearmods=Lock, repeat=true) ]
+        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<HOME>, clearmods=Lock) ]
     };
 
     // "I"
     key <AD08> {
         symbols[Group1] = [ NoSymbol, NoSymbol, Up ],
-        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<UP>, clearmods=Lock, repeat=true) ]
+        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<UP>, clearmods=Lock) ]
     };
 
     // "O"
     key <AD09> {
         symbols[Group1] = [ NoSymbol, NoSymbol, End ],
-        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<END>, clearmods=Lock, repeat=true) ]
+        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<END>, clearmods=Lock) ]
     };
 
     // "P"
     key <AD10> {
         symbols[Group1] = [ NoSymbol, NoSymbol, Menu ],
-        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<MENU>, clearmods=Lock, repeat=true) ]
+        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<MENU>, clearmods=Lock) ]
     };
 
     // "["
     key <AD11> {
         symbols[Group1] = [ NoSymbol, NoSymbol, Next ],
-        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<PGDN>, clearmods=Lock, repeat=true) ]
+        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<PGDN>, clearmods=Lock) ]
     };
 
     // "]"
     key <AD12> {
         symbols[Group1] = [ NoSymbol, NoSymbol, Prior ],
-        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<PGUP>, clearmods=Lock, repeat=true) ]
+        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<PGUP>, clearmods=Lock) ]
     };
 
     // "J" AC07
     key <AC07> {
         symbols[Group1] = [ NoSymbol, NoSymbol, Left ],
-        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<LEFT>, clearmods=Lock, repeat=true) ]
+        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<LEFT>, clearmods=Lock) ]
     };
 
     // "K" AC08
     key <AC08> {
         symbols[Group1] = [ NoSymbol, NoSymbol, Down ],
-        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<DOWN>, clearmods=Lock, repeat=true) ]
+        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<DOWN>, clearmods=Lock) ]
     };
 
     // "L" AC09
     key <AC09> {
         symbols[Group1] = [ NoSymbol, NoSymbol, Right ],
-        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<RGHT>, clearmods=Lock, repeat=true) ]
+        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<RGHT>, clearmods=Lock) ]
     };
 
     // "," AB08
     key <AB08> {
         symbols[Group1] = [ NoSymbol, NoSymbol, BackSpace ],
-        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<BKSP>, clearmods=Lock, repeat=true) ]
+        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<BKSP>, clearmods=Lock) ]
     };
 
     // "." AB09
     key <AB09> {
         symbols[Group1] = [ NoSymbol, NoSymbol, Delete ],
-        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<DELE>, clearmods=Lock, repeat=true) ]
+        actions[Group1] = [ NoAction(), NoAction(), RedirectKey(keycode=<DELE>, clearmods=Lock) ]
     };
 
 };
