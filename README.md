@@ -1,5 +1,24 @@
 # xkb-ijkl-to-arrows-keybind
-Instructions on how to bind ijkl to arrows when holding caps lock. For xkb on Linux/X11.
+Instructions on how to bind `CapsLock+Key` to various wiedly used actions like arrow keys, home, end, etc. For xkb on Linux/X11.
+
+Bindings used here are:
+
+`CapsLock + ...`
+- `i` = Up
+- `j` = Left
+- `k` = Down
+- `l` = Right
+- `u` = Home
+- `o` = End
+- `,` = Backspace
+- `.` = Delete
+- `p` = Menu
+- `[` = PageDown
+- `]` = PageUp
+
+But they can rebound in `symbols/custom_caps`.
+
+WARNING: Setting something incorrectly in the xkb config files can make X fail at startup, locking you out of the ability to log in. Make sure you know how to recover in that case.
 
 # Instructions TLDR:
 
@@ -50,9 +69,9 @@ xset r 59 # ,
 xset r 60 # .
 ```
 
-Log out, log back in.
+Log out, log back in. Done.
 
-
+Full instructions below.
 
 # Step 1: Copy custom files
 
