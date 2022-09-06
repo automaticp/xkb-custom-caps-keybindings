@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#
+# ./make_backup.sh [backup_dir=.]
 
 
 BACKUP_ROOT="$1"
