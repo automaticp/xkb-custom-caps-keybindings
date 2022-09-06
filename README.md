@@ -209,3 +209,8 @@ I'm running Gnome, so I've just added this to `~/.gnomerc`.
 
 
 # Step 4: Enjoy life until the next system update
+
+The real reason I'am writing these instructions is that a recent system update wiped all of my custom keybindings, that I, about half a year ago, had haphazardly put together out of scraps of information that I could find on xkb. It cost me a week of pain to actually get a somewhat stable version done. And then it was gone...
+And of course by that time I barely remembered anything.
+
+This time I did it better, and tried to almost not touch default config files. The gist is that some system updates are likely to reset these files, like `types/complete` and `symbols/us`. So upon an update, if everything breaks, redo step 2.
