@@ -1,6 +1,59 @@
 # xkb-ijkl-to-arrows-keybind
 Instructions on how to bind ijkl to arrows when holding caps lock. For xkb on Linux/X11.
 
+# Instructions TLDR:
+
+```
+git clone https://github.com/automaticp/xkb-ijkl-to-arrows-keybind
+
+cd xkb-ijkl-to-arrows-keybind
+
+./make_backup.sh
+
+sudo ./copy_files.sh
+```
+
+
+Replace all lines mentioning CapsLock in `/usr/share/X11/xkb/compat/complete` with
+
+```
+augment "custom_caps"
+```
+
+
+Open `/usr/share/X11/xkb/types/complete` and add to the end of the list:
+
+```
+include "custom_caps"
+```
+
+
+Choose a file in `/usr/share/X11/xkb/symbols/` that corresponds to your keyboard layout and add to the end of the base layout the following:
+```
+include "custom_caps"
+```
+
+
+Add in your X/Window Manager startup file the following:
+
+```
+xset r 30 # u
+xset r 31 # i
+xset r 32 # o
+xset r 33 # p
+xset r 34 # [
+xset r 35 # ]
+xset r 44 # j
+xset r 45 # k
+xset r 46 # l
+xset r 59 # ,
+xset r 60 # .
+```
+
+Log out, log back in.
+
+
+
 # Step 1: Copy custom files
 
 From project root:
@@ -62,7 +115,7 @@ default xkb_compatibility "complete" {
 
 ## Edit `types/complete`
 
-Open `/usr/share/X11/xkb/compat/complete` and add
+Open `/usr/share/X11/xkb/types/complete` and add
 
 ```
 include "custom_caps"
