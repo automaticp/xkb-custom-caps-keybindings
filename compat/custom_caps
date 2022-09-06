@@ -1,0 +1,7 @@
+default partial xkb_compatibility "custom_caps" {
+
+    interpret Caps_Lock+AnyOfOrNone(all) {
+        action = SetMods(modifiers = Lock);
+    };
+
+};
