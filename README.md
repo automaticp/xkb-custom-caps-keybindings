@@ -1,5 +1,5 @@
-# xkb-ijkl-to-arrows-keybind
-Instructions on how to bind `CapsLock+Key` to various wiedly used actions like arrow keys, home, end, etc. For xkb on Linux/X11.
+# xkb-custom-caps-keybindings
+Instructions on how to bind `CapsLock+Key` to various wiedly used actions like arrow keys, home, end, etc. For xkb on Linux.
 
 Bindings used here are:
 
@@ -19,6 +19,17 @@ Bindings used here are:
 But they can rebound in `symbols/custom_caps`.
 
 WARNING: Setting something incorrectly in the xkb config files can make X fail at startup, locking you out of the ability to log in. Make sure you know how to recover in that case.
+
+# What custom config files do:
+
+All default config files are located in `/usr/share/X11/xkb/`. Custom configs have to be placed there as well.
+
+`compat/custom_caps` disables normal CapsLock behaviour and, enables it to only send the "Lock" modifier when held.
+
+`types/custom_caps` maps the "Lock" and "Lock+Shift" modifier to Level3 input (where, for example, Level1 and Level2 are lowercase and uppercase letters on your keyboard respectively)
+
+`symbols/custom_caps` adds actions for certain keys at
+Level3 input. For example, the `'i'` letter at Level3 sends the `Up` keycode, and `','` sends the `Backspace` keycode.
 
 # Instructions TLDR:
 
