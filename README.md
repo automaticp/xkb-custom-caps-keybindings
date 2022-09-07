@@ -35,11 +35,14 @@ Level3 input. For example, the `'i'` letter at Level3 sends the `Up` keycode, an
 
 ```
 git clone https://github.com/automaticp/xkb-custom-caps-keybindings
-
-cd xkb-ijkl-to-arrows-keybind
-
+```
+```
+cd xkb-custom-caps-keybindings
+```
+```
 ./make_backup.sh
-
+```
+```
 sudo ./copy_files.sh
 ```
 
