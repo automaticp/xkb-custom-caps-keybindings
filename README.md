@@ -34,7 +34,7 @@ Level3 input. For example, the `'i'` letter at Level3 sends the `Up` keycode, an
 # Instructions TLDR:
 
 ```
-git clone https://github.com/automaticp/xkb-ijkl-to-arrows-keybind
+git clone https://github.com/automaticp/xkb-custom-caps-keybindings
 
 cd xkb-ijkl-to-arrows-keybind
 
