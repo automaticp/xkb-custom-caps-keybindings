@@ -215,16 +215,15 @@ xkb_symbols "basic" {
 
 # Step 3: Edit X startup files
 
-If you'll try to restart X right now, you might notice that the keybinds work, but when held they don't produce repeat keystrokes. This is an issue with using `RedirectKey()` in our `symbols/custom_caps`, it's either bugged, or does not respond to the `repeat` option. In my travels across very few of the resources on xkb, I've seen some people hint that it should work, and 've heard others say that it doesn't. On my Ubuntu 22.04, it doesn't.
+If you'll try to restart X right now, you might notice that the keybinds work, but when held they don't produce repeat keystrokes. This is an issue with using `RedirectKey()` in our `symbols/custom_caps`. The xkb disables repeat keystrokes whenever the key action is not a simple rebinding.
 
-We specifically want to use `RedirectKey()`, because it produces an actual _keycode_ and not some _virtual key_. Lots of software have difficulty understanding virtual keycodes, so it's best to avoid simple rebinding.
+We specifically want to use `RedirectKey()`, because it produces an actual _keycode_ and not some _virtual key_. A lot of software have difficulty understanding virtual keycodes, so it's best to avoid simple rebinding.
 
-There's a workaround, of course. You can reenable repeat presses by adding in your X/Window Manager startup file the following:
+Sadly, I have not found a way to re-enable repeats right inside the `symbols/...` file, but there's a workaround, of course. You can re-enable them by adding in your X/Window Manager startup file the following:
 
 ```
-# set repeat for keys that were overriden in xkb
-# neccesary due to 'repeat = true' not working
-# in xkb_symbols (bug?)
+# set repeat for keys that were overriden in the custom xkb config
+# xset r [keycode]
 xset r 30 # u
 xset r 31 # i
 xset r 32 # o
@@ -239,6 +238,11 @@ xset r 60 # .
 ```
 
 I'm running Gnome, so I've just added this to `~/.gnomerc`.
+
+Keycodes for other keys can be found by running:
+```
+xev
+```
 
 
 # Step 4: Enjoy life until the next system update
