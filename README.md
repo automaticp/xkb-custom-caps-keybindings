@@ -212,6 +212,11 @@ xkb_symbols "basic" {
 };
 ```
 
+For other layouts the "base" layout can have a different name and be a bit harder to find. The layout that acts as a common base is usually:
+- Placed close to the beginning of a symbols file
+- Defines all alphanumeric keys (A-Z, 0-9) and some more
+- Is included by most of the other layouts in that file
+
 
 # Step 3: Edit X startup files
 
